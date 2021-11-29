@@ -21,6 +21,9 @@ class ListaExibeProdutoFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var produtoId: Long? = null
     lateinit var listaViewModel: ListaProdutosViewModel
+
+    private lateinit var mPager:ViewPager2
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -42,13 +45,25 @@ class ListaExibeProdutoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val mPager = view.findViewById<ViewPager2>(R.id.mpager)
-        if(mPager!=null){
-            val tamanho = listaViewModel.produtos?.value?.size
-            if(tamanho!=null)
-                mPager.adapter = ListaExibeViewPagerAdapter(requireActivity(),tamanho)
-            mPager.currentItem = (produtoId?.minus(1))?.toInt()!!
+         mPager = view.findViewById<ViewPager2>(R.id.mpager)
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        with(mPager as ViewPager2){
+
+                val tamanho = listaViewModel.produtos?.value?.size
+                if(tamanho!=null)
+                    adapter = ListaExibeViewPagerAdapter(requireActivity(),tamanho)
+
+
+            val itemClicadoPosicao =(produtoId?.minus(1))?.toInt()!!
+            this.post {
+                currentItem = itemClicadoPosicao
+            }
         }
+
     }
 
 

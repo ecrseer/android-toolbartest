@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/menu_btn_salvar"
-        android:icon="@android:drawable/ic_input_add"
+        android:icon="@android:drawable/ic_menu_save"
         android:title="salvar"
         app:showAsAction="ifRoom" />
 </menu>

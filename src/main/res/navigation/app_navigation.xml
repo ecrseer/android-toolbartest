@@ -20,4 +20,9 @@
         android:name="br.pro.aguiar.ep7produtos.ui.produtos.exibe.ExibeProdutoFragment"
         android:label="exibe_produto_fragment"
         tools:layout="@layout/exibe_produto_fragment" />
+    <fragment
+        android:id="@+id/listaExibeProdutoFragment"
+        android:name="br.pro.aguiar.ep7produtos.ui.produtos.exibe.ListaExibeProdutoFragment"
+        android:label="fragment_lista_exibe_produto"
+        tools:layout="@layout/fragment_lista_exibe_produto" />
 </navigation>

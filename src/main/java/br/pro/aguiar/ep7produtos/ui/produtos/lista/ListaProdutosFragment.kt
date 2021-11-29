@@ -54,7 +54,7 @@ class ListaProdutosFragment : Fragment() {
                         "produtoId" to produtos.get(position).id
                     )
                     findNavController()
-                        .navigate(R.id.exibeProdutoFragment, bundle)
+                        .navigate(R.id.listaExibeProdutoFragment, bundle)
                 }
             } else
                 Snackbar.make(

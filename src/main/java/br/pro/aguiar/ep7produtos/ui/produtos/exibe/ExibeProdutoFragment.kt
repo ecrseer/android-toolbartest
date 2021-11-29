@@ -38,11 +38,16 @@ class ExibeProdutoFragment : Fragment() {
             .get(ExibeProdutoViewModel::class.java)
 
 
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         viewModel.produto.observe(viewLifecycleOwner){ produto ->
             view.findViewById<TextView>(R.id.textViewProdutoNome)
                 .text = produto.nome
         }
-        return view
     }
 
 }

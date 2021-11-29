@@ -1,9 +1,7 @@
 package br.pro.aguiar.ep7produtos.ui.produtos.lista
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.ListView
@@ -30,6 +28,7 @@ class ListaProdutosFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        setHasOptionsMenu(true)
 
         var view = inflater.inflate(
             R.layout.lista_produtos_fragment,
@@ -69,6 +68,13 @@ class ListaProdutosFragment : Fragment() {
                 .navigate(R.id.formProdutoFragment)
         }
         return view
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+
+        menu.clear()
+        inflater.inflate(R.menu.menu_main,menu)
+        return super.onCreateOptionsMenu(menu, inflater)
     }
 
 }

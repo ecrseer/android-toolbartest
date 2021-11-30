@@ -1,10 +1,10 @@
-package br.pro.aguiar.ep7produtos.ui.produtos.form
+package infnet.desenvolvimentoandroid.toolbartst.ui.produtos.form
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.pro.aguiar.ep7produtos.models.Produto
-import br.pro.aguiar.ep7produtos.repository.ProdutoDao
+import infnet.desenvolvimentoandroid.toolbartst.models.Produto
+import infnet.desenvolvimentoandroid.toolbartst.repository.ProdutoDao
 
 class FormProdutoViewModel : ViewModel() {
 

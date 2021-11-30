@@ -1,6 +1,6 @@
-package br.pro.aguiar.ep7produtos.repository
+package infnet.desenvolvimentoandroid.toolbartst.repository
 
-import br.pro.aguiar.ep7produtos.models.Produto
+import infnet.desenvolvimentoandroid.toolbartst.models.Produto
 
 object ProdutoDao {
     private var produtos: MutableList<Produto> = mutableListOf(

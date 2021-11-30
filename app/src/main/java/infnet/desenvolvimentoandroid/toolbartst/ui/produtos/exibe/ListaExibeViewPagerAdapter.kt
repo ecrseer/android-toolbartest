@@ -1,4 +1,4 @@
-package br.pro.aguiar.ep7produtos.ui.produtos.exibe
+package infnet.desenvolvimentoandroid.toolbartst.ui.produtos.exibe
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

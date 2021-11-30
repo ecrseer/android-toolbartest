@@ -1,4 +1,4 @@
-package br.pro.aguiar.ep7produtos.ui.produtos.exibe
+package infnet.desenvolvimentoandroid.toolbartst.ui.produtos.exibe
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
-import br.pro.aguiar.ep7produtos.repository.ProdutoDao
-import br.pro.aguiar.ep7produtos.ui.produtos.lista.ListaProdutosViewModel
+import infnet.desenvolvimentoandroid.toolbartst.repository.ProdutoDao
+import infnet.desenvolvimentoandroid.toolbartst.ui.produtos.lista.ListaProdutosViewModel
 import infnet.desenvolvimentoandroid.toolbartst.R
 
 

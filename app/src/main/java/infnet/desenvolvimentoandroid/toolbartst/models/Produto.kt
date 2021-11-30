@@ -1,4 +1,4 @@
-package br.pro.aguiar.ep7produtos.models
+package infnet.desenvolvimentoandroid.toolbartst.models
 
 class Produto(
     var nome: String,

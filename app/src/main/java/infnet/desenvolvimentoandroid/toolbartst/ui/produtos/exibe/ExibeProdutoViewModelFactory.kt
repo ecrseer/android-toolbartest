@@ -1,4 +1,4 @@
-package br.pro.aguiar.ep7produtos.ui.produtos.exibe
+package infnet.desenvolvimentoandroid.toolbartst.ui.produtos.exibe
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EP3">
         <activity
-            android:name=".MainActivity"
+            android:name="infnet.desenvolvimentoandroid.toolbartst.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

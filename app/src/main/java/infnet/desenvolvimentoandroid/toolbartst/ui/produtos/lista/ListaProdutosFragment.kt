@@ -1,4 +1,4 @@
-package br.pro.aguiar.ep7produtos.ui.produtos.lista
+package infnet.desenvolvimentoandroid.toolbartst.ui.produtos.lista
 
 import android.os.Bundle
 import android.view.*
